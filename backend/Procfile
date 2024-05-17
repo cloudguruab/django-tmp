@@ -1,0 +1,6 @@
+web: ./scripts/entrypoint.sh
+migrations: python manage.py makemigrations
+migrate: python manage.py migrate
+showmigrations: python manage.py showmigrations
+collectstatic: python manage.py collectstatic --noinput
+req: pip install --no-cache-dir -r requirements.txt
